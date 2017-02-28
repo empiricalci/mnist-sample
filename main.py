@@ -27,7 +27,7 @@ f.close()
 # Save training accuracy
 table = [['Epoch', 'Accuracy']]
 for row, acc in enumerate(training_accuracy):
-    table.append([row, float(acc/5000.0)])
+    table.append([row, float(acc/50000.0)])
 t = open('/workspace/accuracy.json', 'w')
 t.write(json.dumps(table))
 t.close()
