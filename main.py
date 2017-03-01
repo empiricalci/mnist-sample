@@ -1,7 +1,7 @@
 import mnist_loader
 import network
 
-epochs = 10
+epochs = 5
 training_data, validation_data, test_data = mnist_loader.load_data_wrapper()
 net = network.Network([784, 30, 10])
 ev_cost, ev_acc, tr_cost, training_accuracy = net.SGD(
